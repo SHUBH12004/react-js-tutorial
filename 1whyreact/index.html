@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why React</title>
+    <style>
+    .box {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        display: flex;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        justify-content: center; /*main axis*/
+        align-items: center;/*cross axis*/
+        font-size: 1.2em;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        will-change: transform, box-shadow;
+        /* For smoother animations */
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .box1 {
+        background: linear-gradient(135deg, #61dafb 60%, #21a1f3 100%);
+    }
+    .box2 {
+        background: linear-gradient(135deg, #f7df1e 60%, #ffe066 100%);
+    }
+    .box3 {
+        background: linear-gradient(135deg, #e34c26 60%, #f06529 100%);
+    }
+    .box:hover {
+        transform: scale(1.08) rotate(-2deg);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        cursor: pointer;
+    }
+    body {
+        background: #f5f7fa;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am box 1</div>
+    <div class="box box2">I am box 2</div>
+    <div class="box box3">I am box 3</div>
+    <script>    
+        // react js helps for example, the below code can be written in a more efficient way
+        // we can simply update the state of a variable and the UI will automatically update 
+
+
+        //react props-> they are like function arguments, they allow us to pass data from one component to another
+        //react state-> they are like variables, they allow us to store data that can change over time
+        //react components-> they are like functions, they allow us to create reusable pieces of UI
+        //react hooks-> they are like functions, they allow us to use state and other features in functional components
+        //react lifecycle methods-> they are like functions, they allow us to run code at specific points in a component's life cycle
+
+        
+        // setTimeout(() => {
+        //     document.querySelectorAll('.box1').forEach(box => {
+        //         box.style.transform = 'scale(1.1) rotate(2deg)';
+        //         box.style.boxShadow = '0 12px 48px rgba(0,0,0,0.24)';
+        //     });
+        // }, 1000);
+        // setTimeout(() => {
+        //     document.querySelectorAll('.box2').forEach(box => {
+        //         box.style.transform = 'scale(1) rotate(0deg)';
+        //         box.style.boxShadow = '0 4px 16px rgba(0,0,0,0.12)';
+        //     });
+        // }, 2000);
+        // setTimeout(() => {
+        //     document.querySelectorAll('.box3').forEach(box => {
+        //         box.style.transform = 'scale(1.08) rotate(-2deg)';
+        //         box.style.boxShadow = '0 8px 32px rgba(0,0,0,0.18)';
+        //     });
+        // }, 3000);
+    </script>
+</body>
+</html>
